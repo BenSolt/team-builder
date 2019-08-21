@@ -4,7 +4,7 @@ import './App.css';
 
 import data from "./data";
 import Form from "./Form";
-import Notes from "./Notes";
+import TeamMember from "./TeamMember";
 
 function App() {
 
@@ -19,7 +19,7 @@ function App() {
       <div className="App">e
         <h1>My Team</h1>
         <Form addmember={addNewMember} />
-        <Notes notesa={member} />
+        <TeamMember notesa={member} />
       </div>
     );
   }

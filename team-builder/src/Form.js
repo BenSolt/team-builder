@@ -1,16 +1,16 @@
 import React, { useState } from "react";
 
 const Form = props => {
-  const [fom, setNote] = useState({ name: "", email: "", role:"" });
+  const [form, setNote] = useState({ name: "", email: "", role:"" });
   const changeHandler = event => {
     //computed properties
     console.log(event.target.value);
-    setNote({ ...fom, [event.target.name]: event.target.value });
+    setNote({ ...form, [event.target.name]: event.target.value });
   };
   const submitForm = event => {
     event.preventDefault();
     const newNote = {
-      ...fom,
+      ...form,
       //id: Date.now()
     };
     props.addmember(newNote);
@@ -26,7 +26,7 @@ const Form = props => {
         type="text"
         name="name"
         placeholder="Enter Name"
-        // value={foma.name}
+         value={form.name}
         onChange={changeHandler}
       />
 
@@ -36,7 +36,7 @@ const Form = props => {
       
         name="email"
         placeholder="Enter Email"
-        value={foma.email}
+        value={form.email}
         onChange={changeHandler}
       />
 
@@ -44,7 +44,7 @@ const Form = props => {
       <input
         name="role"
         placeholder="Enter Role"
-        value={fom.role}
+        value={form.role}
         onChange={changeHandler}
       />
 
