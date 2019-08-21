@@ -48,7 +48,7 @@ const Form = props => {
         onChange={changeHandler}
       />
 
-        <div className = "btn">
+        <div className = "btndiv">
         <button type="submit">Add note</button>
         </div>
       

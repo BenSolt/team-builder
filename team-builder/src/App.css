@@ -35,10 +35,23 @@
 .HeaderA{
   background: gray;
   padding: 30px;
+
 }
 
 .note{
   background: gray;
   margin: 2%;
+}
+
+
+.btndiv{
+  display: flex;
+  justify-content: center;
+  padding: 65px 0 5px 0;
+}
+
+button{
+  width: 128px;
+  height: 64px;
 }
 
