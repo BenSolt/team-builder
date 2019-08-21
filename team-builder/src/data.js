@@ -5,6 +5,15 @@ export default [
       Email: "chief@halo.com",
       role: "Super soldier"
     
+    },
+
+    {
+        id: 2,
+      Name: "Cortana",
+      Email: "cortana@halo.com",
+      role: "Super Computer AI"
+    
     }
+
   ];
   

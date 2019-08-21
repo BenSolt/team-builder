@@ -1,26 +1,33 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {useState} from 'react';
+
 import './App.css';
 
+import data from "./data";
+import Form from "./Form";
+import Notes from "./Notes";
+
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+
+    const [member, setMember] = useState(data);
+    console.log(member);
+     const addNewMember = test => {
+         setMember([...member, test]);
+
+
+    };
+    return (
+      <div className="App">
+        <h1>My Notes</h1>
+        <Form addNewNote={addNewMember} />
+        <Notes notesList={member} />
+      </div>
+    );
+  }
+
+
+
+
+  
+
 
 export default App;
