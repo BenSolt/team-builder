@@ -1,6 +1,6 @@
 import React from "react";
 
-const Notes = props => {
+const TeamMember = props => {
   console.log(props);
   return (
     <div className="note-list">
@@ -16,4 +16,4 @@ const Notes = props => {
     </div>
   );
 };
-export default Notes;
+export default TeamMember;

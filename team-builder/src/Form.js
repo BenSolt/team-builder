@@ -52,6 +52,12 @@ const Form = props => {
         <button type="submit">Add note</button>
         </div>
       
+      
+
+
+      
+
+
 
       </div>
 

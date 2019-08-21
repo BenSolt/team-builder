@@ -16,7 +16,7 @@ function App() {
 
     };
     return (
-      <div className="App">e
+      <div className="App">
         <h1>My Team</h1>
         <Form addmember={addNewMember} />
         <TeamMember notesa={member} />
