@@ -25,7 +25,7 @@ const Form = props => {
       <input
         type="text"
         name="name"
-        placeholder="note title"
+        placeholder="Enter Name"
         value={note.name}
         onChange={changeHandler}
       />
@@ -35,7 +35,7 @@ const Form = props => {
       <input
       
         name="email"
-        placeholder="Type your note here"
+        placeholder="Enter Email"
         value={note.email}
         onChange={changeHandler}
       />
@@ -43,7 +43,7 @@ const Form = props => {
     <label htmlFor="role">Role body</label>
       <input
         name="role"
-        placeholder="Type your note here"
+        placeholder="Enter Role"
         value={note.role}
         onChange={changeHandler}
       />
