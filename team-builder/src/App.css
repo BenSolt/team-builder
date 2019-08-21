@@ -31,3 +31,14 @@
     transform: rotate(360deg);
   }
 }
+
+.HeaderA{
+  background: gray;
+  padding: 30px;
+}
+
+.note{
+  background: gray;
+  margin: 2%;
+}
+

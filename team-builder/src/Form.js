@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 const Form = props => {
-  const [note, setNote] = useState({ title: "", body: "" });
+  const [note, setNote] = useState({ name: "", email: "", role:"" });
   const changeHandler = event => {
     //computed properties
     console.log(event.target.value);
@@ -14,26 +14,45 @@ const Form = props => {
       id: Date.now()
     };
     props.addNewNote(newNote);
-    setNote({ title: "", body: "" });
+    setNote({ name: "", email: "", role:""});
   };
   return (
     <form onSubmit={submitForm}>
-      <label htmlFor="title">Note Title</label>
+
+      <div className = "HeaderA">
+
+      <label htmlFor="name">Name</label>
       <input
         type="text"
-        name="title"
+        name="name"
         placeholder="note title"
-        value={note.title}
+        value={note.name}
         onChange={changeHandler}
       />
-      <label htmlFor="body">Note body</label>
-      <textarea
-        name="body"
+
+      
+      <label htmlFor="email">Email body</label>
+      <input
+      
+        name="email"
         placeholder="Type your note here"
-        value={note.body}
+        value={note.email}
         onChange={changeHandler}
       />
+
+    <label htmlFor="role">Role body</label>
+      <input
+        name="role"
+        placeholder="Type your note here"
+        value={note.role}
+        onChange={changeHandler}
+      />
+
+
       <button type="submit">Add note</button>
+
+      </div>
+
     </form>
   );
 };

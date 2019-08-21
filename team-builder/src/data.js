@@ -1,16 +1,16 @@
 export default [
     {
-        id: 1,
-      Name: "Master Chief",
-      Email: "chief@halo.com",
+       
+      name: "Master Chief",
+      email: "chief@halo.com",
       role: "Super soldier"
     
     },
 
     {
-        id: 2,
-      Name: "Cortana",
-      Email: "cortana@halo.com",
+        
+      name: "Cortana",
+      email: "cortana@halo.com",
       role: "Super Computer AI"
     
     }

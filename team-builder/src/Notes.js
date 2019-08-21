@@ -7,8 +7,9 @@ const Notes = props => {
       {props.notesList.map(note => {
         return (
           <div className="note" key={note.id}>
-            <h2>{note.title}</h2>
-            <p>{note.body}</p>
+            <h2>{note.name}</h2>
+            <p>{note.email}</p>
+            <p>{note.role}</p>
           </div>
         );
       })}

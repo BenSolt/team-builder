@@ -10,14 +10,14 @@ function App() {
 
     const [member, setMember] = useState(data);
     console.log(member);
-     const addNewMember = test => {
-         setMember([...member, test]);
+     const addNewMember = memb => {
+         setMember([...member, memb]);
 
 
     };
     return (
       <div className="App">
-        <h1>My Notes</h1>
+        <h1>My Team</h1>
         <Form addNewNote={addNewMember} />
         <Notes notesList={member} />
       </div>
