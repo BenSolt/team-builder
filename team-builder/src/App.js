@@ -16,10 +16,10 @@ function App() {
 
     };
     return (
-      <div className="App">
+      <div className="App">e
         <h1>My Team</h1>
-        <Form addNewNote={addNewMember} />
-        <Notes notesList={member} />
+        <Form addmember={addNewMember} />
+        <Notes notesa={member} />
       </div>
     );
   }

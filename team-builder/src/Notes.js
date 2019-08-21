@@ -4,7 +4,7 @@ const Notes = props => {
   console.log(props);
   return (
     <div className="note-list">
-      {props.notesList.map(note => {
+      {props.notesa.map(note => {
         return (
           <div className="note" key={note.id}>
             <h2>{note.name}</h2>

@@ -33,21 +33,28 @@
 }
 
 .HeaderA{
-  background: gray;
+  background: lightblue;
   padding: 30px;
-
+  margin: 2%;
 }
 
+.note-list{
+display: flex;
+}
+
+
 .note{
-  background: gray;
+  background: lightblue;
   margin: 2%;
+  width: 300px;
+  height: 300px;
 }
 
 
 .btndiv{
   display: flex;
   justify-content: center;
-  padding: 65px 0 5px 0;
+  padding: 45px 0 5px 0;
 }
 
 button{
