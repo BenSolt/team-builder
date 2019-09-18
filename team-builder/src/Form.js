@@ -1,5 +1,9 @@
 import React, { useState } from "react";
 
+
+
+
+
 const Form = props => {
   const [form, setNote] = useState({ name: "", email: "", role:"" });
   const changeHandler = event => {
@@ -10,11 +14,11 @@ const Form = props => {
   const submitForm = event => {
     event.preventDefault();
     const newNote = {
-      ...form,
+       ...form 
       //id: Date.now()
     };
     props.addmember(newNote);
-    setNote({ name: "", email: "", role:""});
+    setNote({ name: "", email: "", role:""}); 
   };
   return (
     <form onSubmit={submitForm}>
@@ -25,7 +29,7 @@ const Form = props => {
       <input
         type="text"
         name="name"
-        placeholder="Enter Name"
+        // placeholder="Enter Name"
          value={form.name}
         onChange={changeHandler}
       />
@@ -48,17 +52,13 @@ const Form = props => {
         onChange={changeHandler}
       />
 
+      
+
         <div className = "btndiv">
         <button type="submit">Add note</button>
         </div>
       
-      
-
-
-      
-
-
-
+    
       </div>
 
     </form>
