@@ -7,7 +7,9 @@ const TeamMember = props => {
       {props.notesa.map(note => {
         return (
           <div className="note" key={note.id}>
-            <button>X</button>
+
+            <button className="btnEdit">Edit</button>
+
             <h2>{note.name}</h2>
             <p>{note.email}</p>
             <p>{note.role}</p>

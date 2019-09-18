@@ -1,15 +1,17 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+
+
 
 
 
 
 
 const Form = props => {
-  const [form, setNote] = useState({ name: "", email: "", role:"" });
+  const [form, setForm] = useState({ name: "", email: "", role:"" });
   const changeHandler = event => {
     //computed properties
     console.log(event.target.value);
-    setNote({ ...form, [event.target.name]: event.target.value });
+    setForm({ ...form, [event.target.name]: event.target.value });
   };
   const submitForm = event => {
     event.preventDefault();
@@ -18,8 +20,26 @@ const Form = props => {
       //id: Date.now()
     };
     props.addmember(newNote);
-    setNote({ name: "", email: "", role:""}); 
+    setForm({ name: "", email: "", role:""}); 
+
+
+
+    
+    props.memberToEdit(newNote);
+    setForm({ ...form, name: "", email: "", role:""}); 
+
+
   };
+
+  
+    
+    
+  
+  
+
+
+
+
   return (
     <form onSubmit={submitForm}>
 
